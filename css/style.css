@@ -1,0 +1,35 @@
+/* Smooth scrolling */
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Animate visible sections on scroll */
+.hidden-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
