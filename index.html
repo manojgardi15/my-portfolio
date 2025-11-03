@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900">
-  
+
   <!-- Navbar -->
   <nav class="flex justify-between items-center px-8 py-4 shadow bg-white sticky top-0 z-50 backdrop-blur-md">
     <h1 class="text-xl font-bold text-red-600">Manoj</h1>
@@ -20,21 +21,22 @@
       <a href="#contact" class="hover:text-red-600 transition-colors duration-300">Contact</a>
     </div>
   </nav>
-  
+
   <!-- Hero -->
   <section class="text-center py-20 bg-gray-100 fade-in">
     <h2 class="text-4xl font-bold mb-4">Hi, I'm Manoj 👋</h2>
     <p class="text-lg mb-6">Ruby on Rails Developer | Building scalable web applications</p>
     <a href="#projects" class="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">View My Work</a>
-    <a href="files/Manoj_gardi.pdf" class="ml-4 px-6 py-3 border border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition"
-    target="_blank">Download Resume</a>
+    <a href="files/Manoj_gardi.pdf"
+      class="ml-4 px-6 py-3 border border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition"
+      target="_blank">Download Resume</a>
   </section>
-  
+
   <!-- About -->
   <section id="about" class="max-w-4xl mx-auto py-16 px-4 text-center hidden-section">
     <h3 class="text-3xl font-semibold mb-6">About Me</h3>
     <p class="text-gray-700 leading-relaxed">
-      I’m a Ruby on Rails Developer with over 2 years of experience in designing, developing, and
+      I’m a Ruby on Rails Developer with over 3 years of experience in designing, developing, and
       maintaining scalable web applications. I specialize in Ruby on Rails, React.js, JavaScript, and MySQL, with
       hands-on expertise in API integration, RESTful API development, and performance optimization.
       <br><br>
@@ -59,77 +61,109 @@
       <span class="px-4 py-2 bg-red-100 text-red-700 rounded">React.js</span>
     </div>
   </section>
-  
+
+  <!-- Experience -->
+  <section id="experience" class="bg-white py-24 px-8">
+    <h3 class="text-3xl font-semibold text-center mb-12 fade-in">Experience</h3>
+
+    <div class="max-w-4xl mx-auto grid md:grid-cols-1 gap-8">
+
+      <!-- Experience Card -->
+      <div
+        class="bg-gray-50 rounded-xl shadow-lg p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50 animate-slide-up">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <h4 class="text-xl font-bold text-gray-800 hover:text-red-600 transition">
+            Ruby on Rails Developer — The Adroit
+          </h4>
+          <p class="text-gray-500 mt-2 sm:mt-0">Nov 2022 – Present</p>
+        </div>
+
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+          <li>Developed and maintained scalable web applications using Ruby, Ruby on Rails, JavaScript, and MySQL.</li>
+          <li>Designed and managed RESTful APIs for seamless communication between frontend and backend.</li>
+          <li>Integrated third-party APIs including payment gateways, FASTag, tracking, and diesel transaction systems.</li>
+          <li>Optimized database queries and improved performance, reducing page load times significantly.</li>
+          <li>Implemented secure authentication and role-based access control using Devise.</li>
+          <li>Deployed and managed applications using Git, Nginx, and Passenger.</li>
+          <li>Collaborated with designers and team members to deliver features efficiently and on schedule.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- Projects -->
   <section id="projects" class="pt-24 pb-16 px-8 bg-gray-100 hidden-section">
     <h3 class="text-3xl font-semibold text-center mb-8">Projects</h3>
     <div class="grid md:grid-cols-3 gap-6">
-      
+
       <!-- Project 1 -->
       <div
         class="bg-white rounded-lg shadow p-4 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50">
         <div class="overflow-hidden rounded-lg">
           <img src="images/header-logo.jpg" alt="Project logo"
             class="rounded mb-4 transition-transform duration-300 hover:scale-110">
-          </div>
-          <h4 class="font-semibold text-lg text-gray-800 hover:text-red-600 transition">Perfect Highway Pvt Ltd</h4>
-          <p class="text-gray-600 mt-2">Built a multi-role logistics platform for admins, truck owners, and staff managers
-            with FASTag, SIM tracking, and JIObp API integrations for automated tracking and fuel management.</p>
-            <div class="mt-3 flex justify-between">
-              <a href="https://perfecthighway.com/" class="text-red-600 hover:underline" target="_blank">Live Demo</a>
-            </div>
-          </div>
-          
-          <!-- Project 2 -->
-          <div
-          class="bg-white rounded-lg shadow p-4 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50">
-          <div class="overflow-hidden rounded-lg">
-            <img src="images/logo.png" alt="Project logo"
-            class="rounded mb-4 transition-transform duration-300 hover:scale-110">
-          </div>
-          <h4 class="font-semibold text-lg text-gray-800 hover:text-red-600 transition">Mindvein Healthcare</h4>
-          <p class="text-gray-600 mt-2">Developed a user-friendly platform for health products with digital therapy
-            delivery, secure transactions, and enhanced UI using jQuery and JavaScript.</p>
-            <div class="mt-3 flex justify-between">
-              <a href="https://www.mindvein.com/" class="text-red-600 hover:underline" target="_blank">Live Demo</a>
-            </div>
-          </div>
-          
-          <!-- Project 3 -->
-          <div
-          class="bg-white rounded-lg shadow p-4 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50">
-          <div class="overflow-hidden rounded-lg">
-            <img src="images/excel_logo.png" alt="Project logo"
-            class="rounded mb-4 transition-transform duration-300 hover:scale-110">
-          </div>
-          <h4 class="font-semibold text-lg text-gray-800 hover:text-red-600 transition">Excel Wallpapers</h4>
-          <p class="text-gray-600 mt-2">Developed a feature-rich platform showcasing premium wall décor collections with
-            dynamic product browsing and optimized performance.</p>
-            <div class="mt-3 flex justify-between">
-              <a href="https://www.excelwallpapers.com/" class="text-red-600 hover:underline" target="_blank">Live Demo</a>
-            </div>
-          </div>
-          
         </div>
-      </section>
-      
-      <!-- Contact -->
+        <h4 class="font-semibold text-lg text-gray-800 hover:text-red-600 transition">Perfect Highway Pvt Ltd</h4>
+        <p class="text-gray-600 mt-2">Built a multi-role logistics platform for admins, truck owners, and staff managers
+          with FASTag, SIM tracking, and JIObp API integrations for automated tracking and fuel management.</p>
+        <div class="mt-3 flex justify-between">
+          <a href="https://perfecthighway.com/" class="text-red-600 hover:underline" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div
+        class="bg-white rounded-lg shadow p-4 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50">
+        <div class="overflow-hidden rounded-lg">
+          <img src="images/logo.png" alt="Project logo"
+            class="rounded mb-4 transition-transform duration-300 hover:scale-110">
+        </div>
+        <h4 class="font-semibold text-lg text-gray-800 hover:text-red-600 transition">Mindvein Healthcare</h4>
+        <p class="text-gray-600 mt-2">Developed a user-friendly platform for health products with digital therapy
+          delivery, secure transactions, and enhanced UI using jQuery and JavaScript.</p>
+        <div class="mt-3 flex justify-between">
+          <a href="https://www.mindvein.com/" class="text-red-600 hover:underline" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div
+        class="bg-white rounded-lg shadow p-4 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-50">
+        <div class="overflow-hidden rounded-lg">
+          <img src="images/excel_logo.png" alt="Project logo"
+            class="rounded mb-4 transition-transform duration-300 hover:scale-110">
+        </div>
+        <h4 class="font-semibold text-lg text-gray-800 hover:text-red-600 transition">Excel Wallpapers</h4>
+        <p class="text-gray-600 mt-2">Developed a feature-rich platform showcasing premium wall décor collections with
+          dynamic product browsing and optimized performance.</p>
+        <div class="mt-3 flex justify-between">
+          <a href="https://www.excelwallpapers.com/" class="text-red-600 hover:underline" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="py-16 text-center hidden-section">
     <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
     <p class="text-gray-700 mb-6">Let’s collaborate on something amazing!</p>
     <p>📧 <a href="mailto:manojgardi157@gmail.com" class="text-red-600">manojgardi157@gmail.com</a></p>
     <div class="mt-4 space-x-6">
       <a href="https://www.linkedin.com/in/manoj-gardi-658259227" class="text-gray-600 hover:text-red-600 transition"
-      target="_blank">LinkedIn</a>
+        target="_blank">LinkedIn</a>
       <a href="https://github.com/manojgardi15" class="text-gray-600 hover:text-red-600 transition"
-      target="_blank">GitHub</a>
+        target="_blank">GitHub</a>
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer class="text-center py-4 bg-gray-900 text-white">
-    © 2025 Manoj. All rights reserved.
+    © 2025 ManojGardi. All rights reserved.
   </footer>
   <script src="/js/comman.js"></script>
 </body>
+
 </html>
